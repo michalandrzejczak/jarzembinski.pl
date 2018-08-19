@@ -27,11 +27,11 @@ class App extends Component {
 						<li><NavLink to="/kontakt">Kontakt</NavLink></li>
 					</ul>
 					<div className="container">
-						<Route exact path="/" component={Home}/>
-						<Route path="/wizja" component={Wizja}/>
-						<Route path="/program" component={Program}/>
-						<Route path="/o-mnie" component={O_mnie}/>
-						<Route path="/kontakt" component={Kontakt}/>
+						<Route exact path={process.env.PUBLIC_URL + "/"} component={Home}/>
+						<Route path={process.env.PUBLIC_URL + "/wizja"} component={Wizja}/>
+						<Route path={process.env.PUBLIC_URL + "/program"} component={Program}/>
+						<Route path={process.env.PUBLIC_URL + "/o-mnie"} component={O_mnie}/>
+						<Route path={process.env.PUBLIC_URL + "/kontakt"} component={Kontakt}/>
 					</div>
 				</header>
 			</HashRouter>
