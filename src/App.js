@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import {
 	Route,
 	NavLink,
-	HashRouter
+	Switch,
+	BrowserRouter
 } from "react-router-dom";
 
 /* Components */
@@ -15,7 +16,7 @@ import Kontakt from "./Components/Kontakt.jsx";
 class App extends Component {
 	render() {
 		return (
-			<HashRouter>
+			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<header>
 					<NavLink to="/"><h1>Bartłomiej Jarzembiński</h1></NavLink>
 					<h2>Kandydat na radnego</h2>
@@ -27,14 +28,17 @@ class App extends Component {
 						<li><NavLink to="/kontakt">Kontakt</NavLink></li>
 					</ul>
 					<div className="container">
-						<Route exact path="/" component={Home}/>
-						<Route path="/wizja" component={Wizja}/>
-						<Route path="/program" component={Program}/>
-						<Route path="/o-mnie" component={O_mnie}/>
-						<Route path="/kontakt" component={Kontakt}/>
+						<Switch>
+							<Route exact path="/" component={Home}/>
+							<Route path="/wizja" component={Wizja}/>
+							<Route path="/program" component={Program}/>
+							<Route path="/o-mnie" component={O_mnie}/>
+							<Route path="/kontakt" component={Kontakt}/>
+							<Route component={() => (<div>Error 404. Nie znaleziono.</div>)} />
+						</Switch>
 					</div>
 				</header>
-			</HashRouter>
+			</BrowserRouter>
 		);
 	}
 }
