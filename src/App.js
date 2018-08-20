@@ -12,6 +12,7 @@ import Wizja from "./Components/Wizja.jsx";
 import Program from "./Components/Program.jsx";
 import O_mnie from "./Components/O_mnie.jsx";
 import Kontakt from "./Components/Kontakt.jsx";
+import Error404 from "./Components/Error404.jsx";
 
 class App extends Component {
 	render() {
@@ -34,7 +35,7 @@ class App extends Component {
 							<Route path="/program" component={Program}/>
 							<Route path="/o-mnie" component={O_mnie}/>
 							<Route path="/kontakt" component={Kontakt}/>
-							<Route component={() => (<div>Error 404. Nie znaleziono.</div>)} />
+							<Route component={Error404} />
 						</Switch>
 					</div>
 				</header>
