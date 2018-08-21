@@ -18,27 +18,42 @@ class App extends Component {
 	render() {
 		return (
 			<BrowserRouter basename={process.env.PUBLIC_URL}>
-				<header>
-					<NavLink to="/"><h1>Bartłomiej Jarzembiński</h1></NavLink>
-					<h2>Kandydat na radnego</h2>
-					<ul className="header">
-						<li><NavLink to="/">Strona główna</NavLink></li>
-						<li><NavLink to="/wizja">Wizja</NavLink></li>
-						<li><NavLink to="/program">Program</NavLink></li>
-						<li><NavLink to="/o-mnie">O mnie</NavLink></li>
-						<li><NavLink to="/kontakt">Kontakt</NavLink></li>
-					</ul>
-					<div className="container">
-						<Switch>
-							<Route exact path="/" component={Home}/>
-							<Route path="/wizja" component={Wizja}/>
-							<Route path="/program" component={Program}/>
-							<Route path="/o-mnie" component={O_mnie}/>
-							<Route path="/kontakt" component={Kontakt}/>
-							<Route component={Error404} />
-						</Switch>
-					</div>
-				</header>
+				<main>
+					<header>
+						<div className="title-container">
+							<NavLink to="/"><h1 className="title">Bartłomiej Jarzembiński</h1></NavLink>
+							<h2 className="subtitle">Kandydat na radnego</h2>
+						</div>
+						<nav>
+							<ul className="navbar">
+								<li><NavLink to="/">Strona główna</NavLink></li>
+								<li><NavLink to="/wizja">Wizja</NavLink></li>
+								<li><NavLink to="/program">Program</NavLink></li>
+								<li><NavLink to="/o-mnie">O mnie</NavLink></li>
+								<li><NavLink to="/kontakt">Kontakt</NavLink></li>
+							</ul>
+						</nav>
+					</header>
+					<section className="container">
+						<article>
+							<Switch>
+								<Route exact path="/" component={Home}/>
+								<Route path="/wizja" component={Wizja}/>
+								<Route path="/program" component={Program}/>
+								<Route path="/o-mnie" component={O_mnie}/>
+								<Route path="/kontakt" component={Kontakt}/>
+								<Route component={Error404} />
+							</Switch>
+						</article>
+						<aside>
+							<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+								<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/facebook">Facebook</a>
+								</blockquote>
+							</div>
+						</aside>
+					</section>
+				</main>
 			</BrowserRouter>
 		);
 	}

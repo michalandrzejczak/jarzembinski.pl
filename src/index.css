@@ -301,42 +301,88 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  background-color: #f0f0f0;
-  padding: 20px;
+html {
+  font-family: Lato, sans-serif;
   margin: 0; }
 
-h1, h2, p, ul, li {
-  font-family: sans-serif; }
+body {
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto; }
 
-a {
-  text-decoration: none; }
-
-h1 {
-  color: #383838; }
-
-h2 {
-  color: #6a6a6a; }
-
-ul.header {
-  background-color: #0080c7;
-  padding: 0; }
-  ul.header li {
-    display: inline;
-    list-style-type: none;
-    margin: 0; }
-    ul.header li a {
-      color: #FFF;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 20px;
-      display: inline-block; }
+a, NavLink {
+  text-decoration: none;
+  outline: 0; }
 
 .container {
-  background-color: #FFF;
-  padding: 20px; }
-  .container h2 {
-    padding: 0;
-    margin: 0; }
-  .container li {
-    margin-bottom: 10px; }
+  max-width: 1500px;
+  margin: 50px auto;
+  position: relative; }
+  .container article {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 1100px;
+    min-height: 600px;
+    padding: 10px 10px; }
+
+aside {
+  float: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 600px;
+  padding: 10px 30px;
+  border-left: 2px solid #cbcbcb; }
+  aside .fb-page {
+    margin: 0 auto; }
+
+header {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-image: url("./assets/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 0;
+  padding: 50px 0 0 0; }
+
+.title-container {
+  margin: 80px 10% 20px 20%; }
+
+h1.title {
+  font-size: 3em;
+  color: #fff; }
+
+h2.subtitle {
+  font-weight: 300;
+  font-size: 2em;
+  color: #f4f4f4; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 0;
+  padding: 0 0; }
+  nav .navbar {
+    margin: 0 0 0 100px;
+    padding: 0 0; }
+    nav .navbar li {
+      display: inline;
+      list-style-type: none;
+      margin: 0; }
+      nav .navbar li a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 20px;
+        display: inline-block;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        nav .navbar li a:hover {
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          color: #0080c7;
+          background-color: rgba(0, 128, 199, 0.1); }
