@@ -32,6 +32,11 @@ class App extends Component {
 								<li><NavLink to="/o-mnie">O mnie</NavLink></li>
 								<li><NavLink to="/kontakt">Kontakt</NavLink></li>
 							</ul>
+							<button className="hamburger hamburger--squeeze" id="ham-menu" type="button" aria-label="Menu" aria-controls="navigation">
+								<span className="hamburger-box">
+									<span className="hamburger-inner"></span>
+								</span>
+							</button>
 						</nav>
 					</header>
 					<section className="container">
@@ -46,8 +51,8 @@ class App extends Component {
 							</Switch>
 						</article>
 						<aside>
-							<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-								<blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+							<div className="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+								<blockquote cite="https://www.facebook.com/facebook" className="fb-xfbml-parse-ignore">
 									<a href="https://www.facebook.com/facebook">Facebook</a>
 								</blockquote>
 							</div>

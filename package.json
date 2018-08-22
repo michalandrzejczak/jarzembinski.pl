@@ -5,6 +5,9 @@
   "homepage": "https://michalandrzejczak.github.io",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
