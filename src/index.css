@@ -401,11 +401,14 @@ template {
 
 html {
   font-family: Lato, sans-serif;
-  margin: 0; }
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden; }
 
 body {
   background-color: #fff;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   margin: 0 auto; }
 
 a, NavLink {
@@ -420,7 +423,7 @@ a, NavLink {
   -ms-flex-pack: center;
   justify-content: center;
   max-width: 1500px;
-  margin: 50px auto;
+  margin: 50px 50px;
   position: relative; }
   .container article {
     float: left;
@@ -547,9 +550,18 @@ nav {
       margin: 0 auto;
       padding: 0;
       background-color: rgba(0, 0, 0, 0.8);
-      display: none;
+      overflow-x: hidden;
       -webkit-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      display: none; }
+      nav .navbar li a {
+        width: 400px;
+        text-align: center; }
+        nav .navbar li a:hover {
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          color: #0080c7;
+          background-color: rgba(0, 128, 199, 0.1); }
 
   .show_navigation {
     display: -webkit-box !important;

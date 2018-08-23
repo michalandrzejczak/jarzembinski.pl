@@ -87,9 +87,21 @@ nav {
 			margin: 0 auto;
 			padding: 0;
 			background-color: rgba(0, 0, 0, 0.8);
+			overflow-x: hidden;
+			transition: all 0.3s ease;
 
 			display: none;
-			transition: all 0.3s ease;
+			li {
+				a {
+					width: 400px;
+					text-align: center;
+					&:hover {
+						transition: all 0.3s ease;
+						color: $primarycolor;
+						background-color: rgba(0, 128, 199, 0.1);
+					}
+				}
+			}
 		}
 	}
 	.show_navigation {

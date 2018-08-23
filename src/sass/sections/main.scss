@@ -3,10 +3,13 @@ $primarycolor: #0080c7;
 html {
 	font-family: Lato, sans-serif;
 	margin: 0;
+	width: 100vw;
+	overflow-x: hidden;
 }
 body {
 	background-color: #fff;
-	width: 100%;
+	width: 100vw;
+	overflow-x: hidden;
 	margin: 0 auto;
 }
 a, NavLink {
@@ -18,7 +21,7 @@ a, NavLink {
 	display: flex;
 	justify-content: center;
 	max-width: 1500px;
-	margin: 50px auto;
+	margin: 50px 50px;
 	position: relative;
 	article {
 		float: left;
