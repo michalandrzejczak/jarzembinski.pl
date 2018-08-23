@@ -415,6 +415,14 @@ a, NavLink {
   text-decoration: none;
   outline: 0; }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,6 +453,9 @@ aside {
     width: 340px;
     margin: 0 auto; }
 
+@media screen and (max-width: 1250px) {
+  article {
+    width: auto !important; } }
 @media screen and (max-width: 1024px) {
   .container {
     -webkit-box-orient: vertical;
@@ -644,3 +655,29 @@ nav {
     font-size: 1.3em;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; } }
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  background-color: #e5e5e5;
+  border-top: 1px solid #c6c6c6;
+  color: #404040;
+  margin-top: 50px;
+  font-size: 0.8em; }
+  footer a {
+    margin: 0 5px;
+    font-weight: 700;
+    color: #404040;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    footer a:hover {
+      text-shadow: 0 0 10px #0080c7;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
