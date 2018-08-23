@@ -43,3 +43,41 @@ aside {
 		margin: 0 auto;
 	}
 }
+@media screen and (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		align-content: center;
+	}
+	article, aside {
+		min-height: unset !important;
+		float: none !important;
+		width: auto !important;
+		padding: 10px 0 !important;
+		margin: 0 30px;
+	}
+	aside {
+		padding: 20px 20px !important;
+		text-align: center;
+		border: none;
+		border-top: 2px solid #cbcbcb;
+		.fb-page {
+			width: auto;
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+	.container {
+		margin: 20px 20px;
+	}
+	article, aside {
+		margin: 0 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.container {
+		margin: 20px 10px;
+	}
+	article, aside {
+		margin: 0 10px;
+	}
+}

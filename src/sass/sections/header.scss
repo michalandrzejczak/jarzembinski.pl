@@ -129,3 +129,17 @@ nav {
 		transition: all 0.3s ease;
 	}
 }
+@media screen and (max-width: 500px) {
+	.title-container {
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+	h1.title {
+		font-size: 2em;
+		transition: all 0.3s ease;
+	}
+	h2.subtitle {
+		font-size: 1.3em;
+		transition: all 0.3s ease;
+	}
+}
