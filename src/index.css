@@ -343,7 +343,7 @@ template {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #171717;
+    background-color: #0080c7;
     border-radius: 4px;
     position: absolute;
     -webkit-transition-property: -webkit-transform;
@@ -450,19 +450,27 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% 0;
-  padding: 50px 0 0 0; }
+  padding: 50px 0 0 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .title-container {
-  margin: 80px 10% 20px 20%; }
+  margin: 80px 10% 20px 20%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 h1.title {
   font-size: 3em;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 h2.subtitle {
   font-weight: 300;
   font-size: 2em;
-  color: #f4f4f4; }
+  color: #f4f4f4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 nav {
   background-color: rgba(0, 0, 0, 0.5);
@@ -477,7 +485,9 @@ nav {
   transition: all 0.3s ease; }
   nav .navbar {
     margin: 0 0 0 100px;
-    padding: 0 0; }
+    padding: 0 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     nav .navbar li {
       display: inline;
       list-style-type: none;
@@ -502,41 +512,73 @@ nav {
   position: fixed;
   right: 1%;
   top: 1%;
-  color: #a3a3a3; }
+  color: #a3a3a3;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
+  nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none; }
+    justify-content: center; }
+    nav .navbar {
+      min-width: 200px;
+      width: 50%;
+      height: 100%;
+      bottom: 0;
+      position: fixed;
+      z-index: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
   .show_navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
   .hamburger {
-    display: block; }
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
-  .nav-toggle {
-    width: 100%;
-    min-height: 310px;
+  header {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    height: 250px; }
+
+  .title-container {
+    margin: 50px 7% 20px 7%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+  h1.title {
+    font-size: 2.5em;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+  h2.subtitle {
+    font-size: 1.7em;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; } }
