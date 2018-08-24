@@ -533,7 +533,7 @@ nav {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   nav .navbar {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 19%;
     padding: 0 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
@@ -542,11 +542,12 @@ nav {
       list-style-type: none;
       margin: 0; }
       nav .navbar li a {
+        display: inline-block;
         color: #fff;
         font-weight: bold;
         text-decoration: none;
-        padding: 20px;
-        display: inline-block;
+        padding: 20px 20px 16px 20px;
+        border-bottom: 4px solid rgba(0, 0, 0, 0);
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease; }
         nav .navbar li a:hover {
@@ -554,6 +555,12 @@ nav {
           transition: all 0.3s ease;
           color: #0080c7;
           background-color: rgba(0, 128, 199, 0.1); }
+
+nav li a[href="/"] {
+  color: #69bbe8 !important; }
+
+.active {
+  border-bottom: 4px solid #0080c7 !important; }
 
 .hamburger {
   display: none;
@@ -564,6 +571,28 @@ nav {
   color: #a3a3a3;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+#scrollToTopArrow {
+  display: block;
+  z-index: 2;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #686868;
+  font-size: 2em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: none; }
+  #scrollToTopArrow:hover {
+    color: #383838;
+    text-shadow: 0 0 15px #0080c7;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.show-arrow {
+  display: block !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 @media screen and (max-width: 768px) {
   nav {
@@ -608,6 +637,9 @@ nav {
           transition: all 0.3s ease;
           color: #0080c7;
           background-color: rgba(0, 128, 199, 0.1); }
+    nav .active {
+      border-bottom: 4px solid rgba(0, 0, 0, 0) !important;
+      color: #0080c7 !important; }
 
   .show_navigation {
     display: -webkit-box !important;

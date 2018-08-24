@@ -5,6 +5,7 @@ import {
 	Switch,
 	BrowserRouter
 } from "react-router-dom";
+import ScrollEvent from 'react-onscroll';
 
 /* Components */
 import Home from "./Components/Home.jsx";
@@ -15,10 +16,28 @@ import Kontakt from "./Components/Kontakt.jsx";
 import Error404 from "./Components/Error404.jsx";
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.handleScrollShowArrow = this.handleScrollShowArrow.bind(this);
+	}
+
+	handleScrollShowArrow() {
+		const $ = require("jquery");
+		if (window.pageYOffset>450) {
+			$("#scrollToTopArrow").addClass("show-arrow");
+		}  else {
+			$("#scrollToTopArrow").removeClass("show-arrow");
+		}
+	}
+	
+	
+	
 	render() {
 		return (
 			<BrowserRouter basename={process.env.PUBLIC_URL}>
 				<main>
+					<ScrollEvent handleScrollCallback={this.handleScrollShowArrow} />
 					<header>
 						<div className="title-container">
 							<NavLink to="/"><h1 className="title">Bartłomiej Jarzembiński</h1></NavLink>
@@ -26,7 +45,7 @@ class App extends Component {
 						</div>
 						<nav>
 							<ul className="navbar">
-								<li><NavLink to="/">Strona główna</NavLink></li>
+								<li><NavLink exact to="/">Strona główna</NavLink></li>
 								<li><NavLink to="/wizja">Wizja</NavLink></li>
 								<li><NavLink to="/program">Program</NavLink></li>
 								<li><NavLink to="/o-mnie">O mnie</NavLink></li>
@@ -39,7 +58,7 @@ class App extends Component {
 							</button>
 						</nav>
 					</header>
-					<div class="wrapper">
+					<div className="wrapper">
 						<section className="container">
 							<article>
 								<Switch>
@@ -59,6 +78,7 @@ class App extends Component {
 					<footer>
 						2018 &copy;<a href="http://michalandrzejczak.com" target="_blank" rel="noopener noreferrer">michalandrzejczak.com</a>
 					</footer>
+					<a id="scrollToTopArrow" href=""><i className="fas fa-arrow-up"></i></a>
 				</main>
 			</BrowserRouter>
 		);

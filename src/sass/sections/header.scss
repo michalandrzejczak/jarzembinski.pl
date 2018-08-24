@@ -35,7 +35,7 @@ nav {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	transition: all 0.3s ease;
 	.navbar {
-		margin: 0 0 0 100px;
+		margin: 0 0 0 19%;
 		padding: 0 0;
 		transition: all 0.3s ease;
 		li {
@@ -43,11 +43,12 @@ nav {
 			list-style-type: none;
 			margin: 0;
 			a {
+				display: inline-block;
 				color: #fff;
 				font-weight: bold;
 				text-decoration: none;
-				padding: 20px;
-				display: inline-block;
+				padding: 20px 20px 16px 20px;
+				border-bottom: 4px solid rgba(0, 0, 0, 0);
 				transition: all 0.3s ease;
 				&:hover {
 					transition: all 0.3s ease;
@@ -58,6 +59,12 @@ nav {
 		}
 	}
 }
+nav li a[href="/"] { // special styling for home navlink
+	color: #69bbe8 !important;
+}
+.active {
+	border-bottom: 4px solid $primarycolor !important;
+}
 .hamburger {
 	display: none;
 	z-index: 2;
@@ -67,7 +74,27 @@ nav {
 	color: #a3a3a3;
 	transition: all 0.3s ease;
 }
-
+#scrollToTopArrow {
+	display: block;
+	z-index: 2;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #686868;
+	font-size: 2em;
+	transition: all 0.3s ease;
+	
+	display: none;
+	&:hover {
+		color: #383838;
+		text-shadow: 0 0 15px $primarycolor;
+		transition: all 0.3s ease;
+	}
+}
+.show-arrow {
+	display: block !important;
+	transition: all 0.5s ease;
+}
 
 @media screen and (max-width: 768px) {
 	nav {
@@ -102,6 +129,10 @@ nav {
 					}
 				}
 			}
+		}
+		.active {
+			border-bottom: 4px solid rgba(0, 0, 0, 0) !important;
+			color: $primarycolor !important;
 		}
 	}
 	.show_navigation {
