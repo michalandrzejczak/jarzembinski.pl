@@ -32,6 +32,7 @@ a, NavLink {
 		width: 800px;
 		min-height: 600px;
 		padding: 10px 10px;
+		text-align: center;
 	}
 }
 aside {
@@ -64,7 +65,7 @@ aside {
 		margin: 0 30px;
 	}
 	aside {
-		padding: 20px 20px !important;
+		padding: 20px 10px !important;
 		text-align: center;
 		border: none;
 		border-top: 2px solid #cbcbcb;
@@ -87,5 +88,8 @@ aside {
 	}
 	article, aside {
 		margin: 0 10px;
+	}
+	aside {
+		padding: 20px 0 !important;
 	}
 }

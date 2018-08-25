@@ -439,7 +439,8 @@ a, NavLink {
     box-sizing: border-box;
     width: 800px;
     min-height: 600px;
-    padding: 10px 10px; }
+    padding: 10px 10px;
+    text-align: center; }
 
 aside {
   float: right;
@@ -473,7 +474,7 @@ aside {
     margin: 0 30px; }
 
   aside {
-    padding: 20px 20px !important;
+    padding: 20px 10px !important;
     text-align: center;
     border: none;
     border-top: 2px solid #cbcbcb; }
@@ -490,7 +491,10 @@ aside {
     margin: 20px 10px; }
 
   article, aside {
-    margin: 0 10px; } }
+    margin: 0 10px; }
+
+  aside {
+    padding: 20px 0 !important; } }
 header {
   height: 400px;
   width: 100%;
@@ -584,6 +588,7 @@ nav li a[href="/"] {
   transition: all 0.3s ease;
   display: none; }
   #scrollToTopArrow:hover {
+    cursor: pointer;
     color: #383838;
     text-shadow: 0 0 15px #0080c7;
     -webkit-transition: all 0.3s ease;

@@ -5,7 +5,7 @@ class Kontakt extends Component {
 		return (
 			<div>
 				<h2>Kontakt</h2>
-				<pre>Tutaj formularz</pre>
+				<img height="200px" width="200px" src="underconstruction.gif" alt="Under construction gif" />
 			</div>
 		);
 	}

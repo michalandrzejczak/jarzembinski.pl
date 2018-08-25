@@ -78,7 +78,7 @@ class App extends Component {
 					<footer>
 						2018 &copy;<a href="http://michalandrzejczak.com" target="_blank" rel="noopener noreferrer">michalandrzejczak.com</a>
 					</footer>
-					<a id="scrollToTopArrow" href=""><i className="fas fa-arrow-up"></i></a>
+					<a id="scrollToTopArrow"><i className="fas fa-arrow-up"></i></a>
 				</main>
 			</BrowserRouter>
 		);

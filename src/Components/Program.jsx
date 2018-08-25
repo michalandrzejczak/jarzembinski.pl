@@ -5,7 +5,7 @@ class Program extends Component {
 		return (
 			<div>
 				<h2>Program</h2>
-				<p>Lorem ipsum dolor sit amet.</p>
+				<img height="200px" width="200px" src="underconstruction.gif" alt="Under construction gif" />
 			</div>
 		);
 	}

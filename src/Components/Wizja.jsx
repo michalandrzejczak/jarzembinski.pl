@@ -4,15 +4,8 @@ class Wizja extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Moja wizja</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, cupiditate:</p>
-				<ol>
-					<li>Nulla pulvinar diam</li>
-					<li>Facilisis bibendum</li>
-					<li>Vestibulum vulputate</li>
-					<li>Eget erat</li>
-					<li>Id porttitor</li>
-				</ol>
+				<h2>Wizja</h2>
+				<img height="200px" width="200px" src="underconstruction.gif" alt="Under construction gif" />
 			</div>
 		);
 	}

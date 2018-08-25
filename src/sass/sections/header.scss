@@ -86,6 +86,7 @@ nav li a[href="/"] { // special styling for home navlink
 	
 	display: none;
 	&:hover {
+		cursor: pointer;
 		color: #383838;
 		text-shadow: 0 0 15px $primarycolor;
 		transition: all 0.3s ease;

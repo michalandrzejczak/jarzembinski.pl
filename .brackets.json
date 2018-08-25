@@ -1,0 +1,5 @@
+{
+	"jar_spa.exclude-indexing-filetree.excludeList": [
+		"node_modules",
+	]
+}

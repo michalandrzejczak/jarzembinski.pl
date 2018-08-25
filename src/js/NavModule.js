@@ -41,6 +41,14 @@
 			}, scrollTime);	
 	}
 	
-	// ScrollToTop arrow is defined in App class in App.js, due to scroll event problems in react :)
+	// ScrollToTop arrow toggle is defined in App class in App.js, due to scroll event problems in react :)
+	
+	arrow.on('click', scrollToTop);
+	
+	function scrollToTop() {
+		$("html, body").stop().animate({
+			scrollTop: 0
+		}, scrollTime)
+	}
 	
 })();
