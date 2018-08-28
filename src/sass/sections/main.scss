@@ -32,8 +32,46 @@ a, NavLink {
 		width: 800px;
 		min-height: 600px;
 		padding: 10px 10px;
-		text-align: center;
+		text-align: right;
+		h2 {
+			color: $primarycolor;
+			font-weight: 900;
+			font-size: 2em;
+			padding: 0 30px 10px 0;
+			border-bottom: 2px solid $primarycolor;
+		}
 	}
+}
+.text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 20px;
+	line-height: 1.5em;
+	color: #1f1f1f;
+	font-size: 1.1em;
+}
+.text-lead-thought-right {
+	position: relative;
+	right: 10%;
+	text-align: right;
+	max-width: 400px;
+	margin: 20px;
+	padding: 5px 20px 5px 5px;
+	font-size: 1.3em;
+	font-weight: 500;
+	line-height: 1.7em;
+	color: #6c6c6c;
+	border-right: 1px solid #bcbcbc;
+}
+.text-lead-thought-left {
+	@extend .text-lead-thought-right;
+	position: relative;
+	right: -10%;
+	text-align: left;
+	padding: 5px 5px 5px 20px;
+	border-right: none;
+	border-left: 1px solid #bcbcbc;
 }
 aside {
 	float: right;
