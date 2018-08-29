@@ -6,20 +6,25 @@ html {
 	width: 100vw;
 	overflow-x: hidden;
 }
+
 body {
 	background-color: #fff;
 	width: 100vw;
 	overflow-x: hidden;
 	margin: 0 auto;
 }
-a, NavLink {
+
+a,
+NavLink {
 	text-decoration: none;
 	outline: 0;
 }
+
 .wrapper {
 	display: flex;
 	justify-content: center;
 }
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -42,37 +47,7 @@ a, NavLink {
 		}
 	}
 }
-.text-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px 20px;
-	line-height: 1.5em;
-	color: #1f1f1f;
-	font-size: 1.1em;
-}
-.text-lead-thought-right {
-	position: relative;
-	right: 10%;
-	text-align: right;
-	max-width: 400px;
-	margin: 20px;
-	padding: 5px 20px 5px 5px;
-	font-size: 1.3em;
-	font-weight: 500;
-	line-height: 1.7em;
-	color: #6c6c6c;
-	border-right: 1px solid #bcbcbc;
-}
-.text-lead-thought-left {
-	@extend .text-lead-thought-right;
-	position: relative;
-	right: -10%;
-	text-align: left;
-	padding: 5px 5px 5px 20px;
-	border-right: none;
-	border-left: 1px solid #bcbcbc;
-}
+
 aside {
 	float: right;
 	box-sizing: border-box;
@@ -85,17 +60,20 @@ aside {
 		margin: 0 auto;
 	}
 }
+
 @media screen and (max-width: 1250px) {
 	article {
 		width: auto !important;
 	}
 }
+
 @media screen and (max-width: 1024px) {
 	.container {
 		flex-direction: column;
 		align-content: center;
 	}
-	article, aside {
+	article,
+	aside {
 		min-height: unset !important;
 		float: none !important;
 		width: auto !important;
@@ -112,19 +90,23 @@ aside {
 		}
 	}
 }
+
 @media screen and (max-width: 600px) {
 	.container {
 		margin: 20px 20px;
 	}
-	article, aside {
+	article,
+	aside {
 		margin: 0 20px;
 	}
 }
+
 @media screen and (max-width: 400px) {
 	.container {
 		margin: 20px 10px;
 	}
-	article, aside {
+	article,
+	aside {
 		margin: 0 10px;
 	}
 	aside {

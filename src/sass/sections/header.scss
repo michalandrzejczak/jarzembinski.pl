@@ -9,21 +9,25 @@ header {
 	padding: 50px 0 0 0;
 	transition: all 0.3s ease;
 }
+
 .title-container {
 	margin: 80px 10% 20px 20%;
 	transition: all 0.3s ease;
 }
+
 h1.title {
 	font-size: 3em;
 	color: #fff;
 	transition: all 0.3s ease;
 }
+
 h2.subtitle {
 	font-weight: 300;
 	font-size: 2em;
 	color: #f4f4f4;
 	transition: all 0.3s ease;
 }
+
 nav {
 	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
@@ -59,12 +63,16 @@ nav {
 		}
 	}
 }
-nav li a[href="/"] { // special styling for home navlink
+
+nav li a[href="/"] {
+	// special styling for home navlink
 	color: #69bbe8 !important;
 }
+
 .active {
 	border-bottom: 4px solid $primarycolor !important;
 }
+
 .hamburger {
 	display: none;
 	z-index: 2;
@@ -74,6 +82,7 @@ nav li a[href="/"] { // special styling for home navlink
 	color: #a3a3a3;
 	transition: all 0.3s ease;
 }
+
 #scrollToTopArrow {
 	display: block;
 	z-index: 2;
@@ -83,7 +92,7 @@ nav li a[href="/"] { // special styling for home navlink
 	color: #686868;
 	font-size: 2em;
 	transition: all 0.3s ease;
-	
+
 	display: none;
 	&:hover {
 		cursor: pointer;
@@ -92,6 +101,7 @@ nav li a[href="/"] { // special styling for home navlink
 		transition: all 0.3s ease;
 	}
 }
+
 .show-arrow {
 	display: block !important;
 	transition: all 0.5s ease;
@@ -161,6 +171,7 @@ nav li a[href="/"] { // special styling for home navlink
 		transition: all 0.3s ease;
 	}
 }
+
 @media screen and (max-width: 500px) {
 	.title-container {
 		text-align: center;

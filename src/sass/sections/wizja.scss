@@ -9,6 +9,7 @@ $primarycolor: #0080c7;
 	color: #1f1f1f;
 	font-size: 1.1em;
 }
+
 .para_align-right {
 	position: relative;
 	right: 10%;
@@ -22,7 +23,8 @@ $primarycolor: #0080c7;
 	color: #6c6c6c;
 	border-right: 1px solid #bcbcbc;
 }
-.para_align-left  {
+
+.para_align-left {
 	@extend .para_align-right;
 	position: relative;
 	right: -10%;
@@ -40,15 +42,19 @@ $primarycolor: #0080c7;
 		line-height: 1.5em;
 	}
 }
+
 @media screen and (max-width: 600px) {
-	.para_align-right, .para_align-left {
+	.para_align-right,
+	.para_align-left {
 		max-width: 300px;
 		box-sizing: border-box;
 		position: static;
 	}
 }
+
 @media screen and (max-width: 400px) {
-	.para_align-right, .para_align-left {
+	.para_align-right,
+	.para_align-left {
 		position: static;
 		font-size: 1em;
 		margin: 20px;
