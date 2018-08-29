@@ -702,7 +702,7 @@ nav li a[href="/"] {
     font-size: 1.3em;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; } }
-.text-container {
+#wizja-section .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -717,8 +717,7 @@ nav li a[href="/"] {
   line-height: 1.5em;
   color: #1f1f1f;
   font-size: 1.1em; }
-
-.para_align-right, .para_align-left {
+#wizja-section .para_align-right, #wizja-section .para_align-left {
   position: relative;
   right: 10%;
   text-align: right;
@@ -730,8 +729,7 @@ nav li a[href="/"] {
   line-height: 1.7em;
   color: #6c6c6c;
   border-right: 1px solid #bcbcbc; }
-
-.para_align-left {
+#wizja-section .para_align-left {
   position: relative;
   right: -10%;
   text-align: left;
@@ -740,22 +738,22 @@ nav li a[href="/"] {
   border-left: 1px solid #bcbcbc; }
 
 @media screen and (max-width: 1250px) {
-  .para_align-right, .para_align-left {
+  #wizja-section .para_align-right, #wizja-section .para_align-left {
     max-width: 350px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 1.2em;
     line-height: 1.5em; } }
 @media screen and (max-width: 600px) {
-  .para_align-right, .para_align-left,
-  .para_align-left {
+  #wizja-section .para_align-right, #wizja-section .para_align-left,
+  #wizja-section .para_align-left {
     max-width: 300px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: static; } }
 @media screen and (max-width: 400px) {
-  .para_align-right, .para_align-left,
-  .para_align-left {
+  #wizja-section .para_align-right, #wizja-section .para_align-left,
+  #wizja-section .para_align-left {
     position: static;
     font-size: 1em;
     margin: 20px; } }

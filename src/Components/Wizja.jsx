@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Wizja extends Component {
 	render() {
 		return (
-			<div>
+			<div id="wizja-section">
 				<h2>Wizja</h2>
 				<div className="text-container">
 					<div className="para_align-left">
