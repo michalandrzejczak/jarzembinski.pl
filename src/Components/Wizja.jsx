@@ -6,6 +6,9 @@ class Wizja extends Component {
 			<div id="wizja-section">
 				<h2>Wizja</h2>
 				<div className="text-container">
+					<div className="para_header">
+						Moją misją jest podejmowanie dialogu z mieszkańcami tak, żeby najlepiej poznać ich oczekiwania, które samorząd terytorialny powinnien wypełniać. Chcę wykorzystać moją młodść i energię na pracę na rzecz Gdyni. Będę aktywnie i z pasją realizować i wspierać rozsądne projekty dotyczące naczego miasta.
+					</div>
 					<div className="para_align-left">
 					Moja Gdynia to miasto otwarte, obywatelskie i działające na przejrzystych zasadach.
 					</div>

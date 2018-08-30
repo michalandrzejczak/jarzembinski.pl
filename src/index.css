@@ -718,6 +718,18 @@ nav li a[href="/"] {
   line-height: 1.5em;
   color: #1f1f1f;
   font-size: 1.1em; }
+#wizja-section .para_header {
+  margin: 30px;
+  padding: 30px 50px;
+  text-align: center;
+  line-height: 1.5em;
+  color: #0080c7;
+  font-size: 20px;
+  border-top: 5px solid #0080c7;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 #wizja-section .para_align-right, #wizja-section .para_align-left {
   position: relative;
   right: 10%;
@@ -727,9 +739,11 @@ nav li a[href="/"] {
   padding: 5px 20px 5px 5px;
   font-size: 1.3em;
   font-weight: 500;
-  line-height: 1.7em;
+  line-height: 1.5em;
   color: #6c6c6c;
-  border-right: 1px solid #bcbcbc; }
+  border-right: 1px solid #bcbcbc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 #wizja-section .para_align-left {
   position: relative;
   right: -10%;
@@ -743,20 +757,27 @@ nav li a[href="/"] {
     max-width: 350px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 1.2em;
-    line-height: 1.5em; } }
+    font-size: 1.2em; } }
+@media screen and (max-width: 768px) {
+  #wizja-section .para_header {
+    width: auto;
+    margin: 20px 0;
+    padding: 20px; } }
 @media screen and (max-width: 600px) {
+  #wizja-section .para_header {
+    font-size: 14px; }
   #wizja-section .para_align-right, #wizja-section .para_align-left,
   #wizja-section .para_align-left {
     max-width: 300px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    position: static; } }
+    position: static;
+    font-size: 16px; } }
 @media screen and (max-width: 400px) {
   #wizja-section .para_align-right, #wizja-section .para_align-left,
   #wizja-section .para_align-left {
     position: static;
-    font-size: 1em;
+    font-size: 14px;
     margin: 20px; } }
 #program-section {
   text-align: center; }

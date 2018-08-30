@@ -38,14 +38,17 @@ nav {
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	transition: all 0.3s ease;
+
 	.navbar {
 		margin: 0 0 0 19%;
 		padding: 0 0;
 		transition: all 0.3s ease;
+
 		li {
 			display: inline;
 			list-style-type: none;
 			margin: 0;
+
 			a {
 				display: inline-block;
 				color: #fff;
@@ -54,6 +57,7 @@ nav {
 				padding: 20px 20px 16px 20px;
 				border-bottom: 4px solid rgba(0, 0, 0, 0);
 				transition: all 0.3s ease;
+
 				&:hover {
 					transition: all 0.3s ease;
 					color: $primarycolor;
@@ -94,6 +98,7 @@ nav li a[href="/"] {
 	transition: all 0.3s ease;
 
 	display: none;
+
 	&:hover {
 		cursor: pointer;
 		color: #383838;
@@ -111,6 +116,7 @@ nav li a[href="/"] {
 	nav {
 		display: flex;
 		justify-content: center;
+
 		.navbar {
 			min-width: 200px;
 			width: 50%;
@@ -129,10 +135,12 @@ nav li a[href="/"] {
 			transition: all 0.3s ease;
 
 			display: none;
+
 			li {
 				a {
 					width: 400px;
 					text-align: center;
+
 					&:hover {
 						transition: all 0.3s ease;
 						color: $primarycolor;
@@ -141,31 +149,38 @@ nav li a[href="/"] {
 				}
 			}
 		}
+
 		.active {
 			border-bottom: 4px solid rgba(0, 0, 0, 0) !important;
 			color: $primarycolor !important;
 		}
 	}
+
 	.show_navigation {
 		display: flex !important;
 		transition: all 0.3s ease;
 	}
+
 	.hamburger {
 		display: block;
 		transition: all 0.3s ease;
 	}
+
 	header {
 		transition: all 0.3s ease;
 		height: 250px;
 	}
+
 	.title-container {
 		margin: 50px 7% 20px 7%;
 		transition: all 0.3s ease;
 	}
+
 	h1.title {
 		font-size: 2.5em;
 		transition: all 0.3s ease;
 	}
+
 	h2.subtitle {
 		font-size: 1.7em;
 		transition: all 0.3s ease;
@@ -177,10 +192,12 @@ nav li a[href="/"] {
 		text-align: center;
 		transition: all 0.3s ease;
 	}
+
 	h1.title {
 		font-size: 2em;
 		transition: all 0.3s ease;
 	}
+
 	h2.subtitle {
 		font-size: 1.3em;
 		transition: all 0.3s ease;

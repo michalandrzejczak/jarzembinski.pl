@@ -31,6 +31,7 @@ NavLink {
 	max-width: 1500px;
 	margin: 50px 50px;
 	position: relative;
+
 	article {
 		float: left;
 		box-sizing: border-box;
@@ -38,6 +39,7 @@ NavLink {
 		min-height: 600px;
 		padding: 10px 10px;
 		text-align: right;
+
 		h2 {
 			color: $primarycolor;
 			font-weight: 900;
@@ -55,6 +57,7 @@ aside {
 	min-height: 600px;
 	padding: 10px 30px;
 	border-left: 2px solid #cbcbcb;
+
 	.fb-page {
 		width: 340px;
 		margin: 77px auto 0;
@@ -72,6 +75,7 @@ aside {
 		flex-direction: column;
 		align-content: center;
 	}
+
 	article,
 	aside {
 		min-height: unset !important;
@@ -80,11 +84,13 @@ aside {
 		padding: 10px 0 !important;
 		margin: 0 30px;
 	}
+
 	aside {
 		padding: 20px 10px !important;
 		text-align: center;
 		border: none;
 		border-top: 2px solid #cbcbcb;
+
 		.fb-page {
 			width: auto;
 			margin: 30px auto 0;
@@ -96,6 +102,7 @@ aside {
 	.container {
 		margin: 20px 20px;
 	}
+
 	article,
 	aside {
 		margin: 0 20px;
@@ -106,10 +113,12 @@ aside {
 	.container {
 		margin: 20px 10px;
 	}
+
 	article,
 	aside {
 		margin: 0 10px;
 	}
+
 	aside {
 		padding: 20px 0 !important;
 	}
