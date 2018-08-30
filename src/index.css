@@ -757,6 +757,53 @@ nav li a[href="/"] {
     position: static;
     font-size: 1em;
     margin: 20px; } }
+#program-section {
+  text-align: center; }
+  #program-section h2 {
+    text-align: right; }
+  #program-section .card-container {
+    display: inline-block;
+    max-width: 200px;
+    max-height: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #program-section .card-container:hover {
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+    #program-section .card-container .card-title {
+      color: #0080c7;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 10px;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    #program-section .card-container .card-paragraph {
+      line-height: 1.5em;
+      color: #525252;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+
+@media screen and (max-width: 400px) {
+  #program-section .card-container {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    #program-section .card-container .card-title {
+      font-size: 1.3em;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    #program-section .card-container .card-paragraph {
+      line-height: 1.4em;
+      font-size: 0.9em;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; } }
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

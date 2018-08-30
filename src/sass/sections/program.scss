@@ -1,0 +1,55 @@
+#program-section {
+	text-align: center;
+
+	h2 {
+		text-align: right;
+	}
+
+	.card-container {
+		display: inline-block;
+		max-width: 200px;
+		max-height: 300px;
+		padding: 20px;
+		margin: 20px;
+		text-align: center;
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+		transition: all 0.5s ease;
+
+		&:hover {
+			transition: all 0.3s ease;
+			transform: scale(1.1)
+		}
+
+		.card-title {
+			color: $primarycolor;
+			font-size: 1.5em;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 10px;
+			transition: all 0.3s ease;
+		}
+
+		.card-paragraph {
+			line-height: 1.5em;
+			color: #525252;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#program-section {
+		.card-container {
+			transition: all 0.3s ease;
+			.card-title {
+				font-size: 1.3em;
+				transition: all 0.3s ease;
+			}
+			.card-paragraph {
+				line-height: 1.4em;
+				font-size: 0.9em;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+}
