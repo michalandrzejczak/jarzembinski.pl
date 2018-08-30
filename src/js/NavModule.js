@@ -36,9 +36,11 @@
 	function closeMenu() {
 		checkWindow();
 		hamburgerToggle();
-		$("html, body").stop().animate({
-					scrollTop: scrollTarget
+		if (window.pageYOffset !== 392) {  /// if offsetY is 392px movement is useless
+			$("html, body").stop().animate({
+				scrollTop: scrollTarget
 			}, scrollTime);	
+		}
 	}
 	
 	// ScrollToTop arrow toggle is defined in App class in App.js, due to scroll event problems in react :)

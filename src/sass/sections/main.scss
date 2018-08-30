@@ -34,7 +34,7 @@ NavLink {
 	article {
 		float: left;
 		box-sizing: border-box;
-		width: 800px;
+		width: 850px;
 		min-height: 600px;
 		padding: 10px 10px;
 		text-align: right;
@@ -57,7 +57,7 @@ aside {
 	border-left: 2px solid #cbcbcb;
 	.fb-page {
 		width: 340px;
-		margin: 0 auto;
+		margin: 77px auto 0;
 	}
 }
 
@@ -87,6 +87,7 @@ aside {
 		border-top: 2px solid #cbcbcb;
 		.fb-page {
 			width: auto;
+			margin: 30px auto 0;
 		}
 	}
 }
