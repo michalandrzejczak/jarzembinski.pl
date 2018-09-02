@@ -35,7 +35,9 @@
 	
 	function closeMenu() {
 		checkWindow();
-		hamburgerToggle();
+		if (windowSize < 768) {
+			hamburgerToggle();
+		}
 		if (window.pageYOffset !== 392) {  /// if offsetY is 392px movement is useless
 			$("html, body").stop().animate({
 				scrollTop: scrollTarget

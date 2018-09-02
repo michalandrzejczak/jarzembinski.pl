@@ -20,6 +20,7 @@ class App extends Component {
 		super(props);
 
 		this.handleScrollShowArrow = this.handleScrollShowArrow.bind(this);
+		
 	}
 
 	handleScrollShowArrow() {
@@ -31,8 +32,6 @@ class App extends Component {
 		}
 	}
 	
-	
-	
 	render() {
 		return (
 			<BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -40,7 +39,9 @@ class App extends Component {
 					<ScrollEvent handleScrollCallback={this.handleScrollShowArrow} />
 					<header>
 						<div className="title-container">
-							<NavLink to="/"><h1 className="title">Bartłomiej Jarzembiński</h1></NavLink>
+							<NavLink to="/">
+								<h1 className="title">Bartłomiej Jarzembiński</h1>
+							</NavLink>
 							<h2 className="subtitle">Kandydat na radnego</h2>
 						</div>
 						<nav>
@@ -71,12 +72,17 @@ class App extends Component {
 								</Switch>
 							</article>
 							<aside>
-								<div className="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+								<div className="fb-page main-widget" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+								<div className="fb-page small-widget" 
+									data-href="https://www.facebook.com/facebook"
+									data-width="280" 
+									data-hide-cover="false"
+									data-show-facepile="false"></div>
 							</aside>
 						</section>
 					</div>
 					<footer>
-						2018 &copy;<a href="http://michalandrzejczak.com" target="_blank" rel="noopener noreferrer">michalandrzejczak.com</a>
+						Projekt<a href="http://michalandrzejczak.com" target="_blank" rel="noopener noreferrer" data-aos="fade-left">Michał Andrzejczak</a> &copy; 2018 
 					</footer>
 					<a id="scrollToTopArrow"><i className="fas fa-arrow-up"></i></a>
 				</main>

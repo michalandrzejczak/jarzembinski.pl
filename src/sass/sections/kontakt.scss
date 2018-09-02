@@ -26,6 +26,11 @@
 					color: #075986;
 					transition: all 0.3s ease;
 				}
+				
+				.e-mail {
+					color: #626262;
+					transition: all 0.3s ease;
+				}
 			}
 
 			.fa-paper-plane {
@@ -34,6 +39,11 @@
 				margin: 0 20px;
 				transition: all 0.3s ease;
 			}
+		}
+		.e-mail {
+			color: #a5a5a5;
+			font-size: 0.6em;
+			transition: all 0.3s ease;
 		}
 	}
 }
@@ -52,7 +62,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
 	#kontakt-section {
 		.method-wrapper {
 			font-size: 20px;

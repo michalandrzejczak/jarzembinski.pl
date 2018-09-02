@@ -58,11 +58,16 @@ aside {
 	padding: 10px 30px;
 	border-left: 2px solid #cbcbcb;
 
-	.fb-page {
+	.fb-page.main-widget {
 		width: 340px;
 		margin: 77px auto 0;
 	}
+	.fb-page.small-widget {
+		display: none;
+	}
 }
+
+
 
 @media screen and (max-width: 1250px) {
 	article {
@@ -91,10 +96,14 @@ aside {
 		border: none;
 		border-top: 2px solid #cbcbcb;
 
-		.fb-page {
-			width: auto;
-			margin: 30px auto 0;
+		.fb-page.main-widget {
+			display: none;
 		}
+		.fb-page.small-widget {
+			display: block;
+			margin: 50px 10px;
+		}
+		
 	}
 }
 

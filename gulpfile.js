@@ -4,6 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const browserify = require('gulp-browserify');
+const uglify = require('gulp-uglify');
 
 
 gulp.task('buildcss', () => {
@@ -26,6 +27,7 @@ gulp.task('buildjs', () =>
 		insertGlobals: true,
 		debug: !gulp.env.production
 	}))
+	.pipe(uglify())
 	.pipe(gulp.dest('./public'))
 	.on('error', function (e) {
 		console.error(e);

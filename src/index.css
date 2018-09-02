@@ -457,9 +457,11 @@ aside {
   min-height: 600px;
   padding: 10px 30px;
   border-left: 2px solid #cbcbcb; }
-  aside .fb-page {
+  aside .fb-page.main-widget {
     width: 340px;
     margin: 77px auto 0; }
+  aside .fb-page.small-widget {
+    display: none; }
 
 @media screen and (max-width: 1250px) {
   article {
@@ -486,9 +488,11 @@ aside {
     text-align: center;
     border: none;
     border-top: 2px solid #cbcbcb; }
-    aside .fb-page {
-      width: auto;
-      margin: 30px auto 0; } }
+    aside .fb-page.main-widget {
+      display: none; }
+    aside .fb-page.small-widget {
+      display: block;
+      margin: 50px 10px; } }
 @media screen and (max-width: 600px) {
   .container {
     margin: 20px 20px; }
@@ -863,19 +867,28 @@ nav li a[href="/"] {
           color: #075986;
           -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease; }
+        #kontakt-section .method-wrapper a:hover .e-mail {
+          color: #626262;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease; }
       #kontakt-section .method-wrapper a .fa-paper-plane {
         font-size: 75px;
         color: #0080c7;
         margin: 0 20px;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease; }
+    #kontakt-section .method-wrapper .e-mail {
+      color: #a5a5a5;
+      font-size: 0.6em;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
 @media screen and (max-width: 600px) {
   #kontakt-section .method-wrapper {
     font-size: 24px; }
     #kontakt-section .method-wrapper a .fa-paper-plane {
       font-size: 50px; } }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   #kontakt-section .method-wrapper {
     font-size: 20px; }
     #kontakt-section .method-wrapper a .fa-paper-plane {
