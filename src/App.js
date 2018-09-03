@@ -11,7 +11,7 @@ import ScrollEvent from 'react-onscroll';
 import Home from "./Components/Home.jsx";
 import Wizja from "./Components/Wizja.jsx";
 import Program from "./Components/Program.jsx";
-import O_mnie from "./Components/O_mnie.jsx";
+import OMnie from "./Components/OMnie.jsx";
 import Kontakt from "./Components/Kontakt.jsx";
 import Error404 from "./Components/Error404.jsx";
 
@@ -20,6 +20,8 @@ class App extends Component {
 		super(props);
 
 		this.handleScrollShowArrow = this.handleScrollShowArrow.bind(this);
+		
+		this.toggleAnimations = this.toggleAnimations.bind(this);
 		
 	}
 
@@ -32,6 +34,33 @@ class App extends Component {
 		}
 	}
 	
+	toggleAnimations()	{
+		const $ = require("jquery");
+
+		const ScrollMagic = require("scrollmagic");
+
+		const animations = $("*[class*='anim']");
+
+		animations.each(triggerAnimOnElement);
+
+		function triggerAnimOnElement() {
+
+			const controller = new ScrollMagic.Controller();
+		 	new ScrollMagic.Scene({
+
+				triggerElement: this,
+				triggerHook: 0.7,
+
+			})
+			.setClassToggle(this, "animationToggle")
+			.addTo(controller);
+		}
+	}
+	
+	componentDidMount() {
+		this.toggleAnimations();	
+	}
+			
 	render() {
 		return (
 			<BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -63,11 +92,11 @@ class App extends Component {
 						<section className="container">
 							<article>
 								<Switch>
-									<Route exact path="/" component={Home}/>
-									<Route path="/wizja" component={Wizja}/>
-									<Route path="/program" component={Program}/>
-									<Route path="/o-mnie" component={O_mnie}/>
-									<Route path="/kontakt" component={Kontakt}/>
+									<Route exact path="/" render={()=><Home toggleAnimations={this.toggleAnimations}/>}/>
+									<Route path="/wizja" render={()=><Wizja toggleAnimations={this.toggleAnimations}/>}/>
+									<Route path="/program" render={()=><Program toggleAnimations={this.toggleAnimations}/>}/>
+									<Route path="/o-mnie" render={()=><OMnie toggleAnimations={this.toggleAnimations}/>}/>
+									<Route path="/kontakt" render={()=><Kontakt toggleAnimations={this.toggleAnimations}/>}/>
 									<Route component={Error404} />
 								</Switch>
 							</article>

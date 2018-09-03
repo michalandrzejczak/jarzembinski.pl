@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 class Program extends Component {
+	
+	componentDidMount() {
+		this.props.toggleAnimations();
+	}
+
 	render() {
 		return (
 			<div id="program-section">

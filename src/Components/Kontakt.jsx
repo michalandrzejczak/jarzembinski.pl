@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 class Kontakt extends Component {
+	
+	componentDidMount() {
+		this.props.toggleAnimations();
+	}
+
 	render() {
 		return (
 			<div id="kontakt-section">

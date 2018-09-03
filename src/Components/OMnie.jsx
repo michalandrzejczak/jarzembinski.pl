@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 
 class O_mnie extends Component {
+	
+	componentDidMount() {
+		this.props.toggleAnimations();
+	}
+
 	render() {
 		return (
 			<div id="o_mnie-section">
-				<h2 data-aos="fade-left">O mnie</h2>
+				<h2>O mnie</h2>
 				<div className="text-container">
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo et vitae inventore suscipit eligendi, libero cupiditate atque nisi qui, perferendis id labore fugiat mollitia facere iste voluptate. Voluptatibus iure deleniti perferendis incidunt, repudiandae facilis eaque.

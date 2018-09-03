@@ -5,6 +5,7 @@
   "homepage": "https://michalandrzejczak.github.io",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "gsap": "^2.0.2",
     "gulp-babel": "^7.0.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
@@ -12,7 +13,8 @@
     "react-dom": "^16.4.2",
     "react-onscroll": "^1.0.4",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "scrollmagic": "^2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

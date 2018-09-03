@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 class Wizja extends Component {
+	
+	componentDidMount() {
+		this.props.toggleAnimations();
+	}
+	
 	render() {
 		return (
 			<div id="wizja-section">
