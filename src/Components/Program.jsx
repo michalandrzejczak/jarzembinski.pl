@@ -9,7 +9,7 @@ class Program extends Component {
 	render() {
 		return (
 			<div id="program-section">
-				<h2>Program</h2>
+				<h2><span className="anim-fadein-heading">Program</span></h2>
 				<div className="card-container">
 					<h3 className="card-title">Dialog z mieszkańcami</h3>
 					<p className="card-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam officia minus quibusdam a quae laboriosam, incidunt vitae harum voluptatibus sit!</p>

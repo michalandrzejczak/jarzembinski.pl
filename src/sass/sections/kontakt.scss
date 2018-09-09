@@ -48,7 +48,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	#kontakt-section {
 		.method-wrapper {
 			font-size: 24px;
@@ -62,7 +62,7 @@
 	}
 }
 
-@media screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
 	#kontakt-section {
 		.method-wrapper {
 			font-size: 20px;

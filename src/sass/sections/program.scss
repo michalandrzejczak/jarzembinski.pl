@@ -37,7 +37,7 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 	#program-section {
 		.card-container {
 			margin: 20px;
@@ -45,7 +45,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
 	#program-section {
 		.card-container {
 			transition: all 0.3s ease;

@@ -12,6 +12,8 @@ import Home from "./Components/Home.jsx";
 import Wizja from "./Components/Wizja.jsx";
 import Program from "./Components/Program.jsx";
 import OMnie from "./Components/OMnie.jsx";
+import Rekomendacje from "./Components/Rekomendacje.jsx"
+import Porozmawiajmy from "./Components/Porozmawiajmy.jsx"
 import Kontakt from "./Components/Kontakt.jsx";
 import Error404 from "./Components/Error404.jsx";
 
@@ -49,7 +51,7 @@ class App extends Component {
 		 	new ScrollMagic.Scene({
 
 				triggerElement: this,
-				triggerHook: 0.7,
+				triggerHook: 0.9,
 
 			})
 			.setClassToggle(this, "animationToggle")
@@ -79,6 +81,8 @@ class App extends Component {
 								<li><NavLink to="/wizja">Wizja</NavLink></li>
 								<li><NavLink to="/program">Program</NavLink></li>
 								<li><NavLink to="/o-mnie">O mnie</NavLink></li>
+								<li><NavLink to="/rekomendacje">Rekomendacje</NavLink></li>
+								<li><NavLink to="/porozmawiajmy">Porozmawiajmy o Gdyni</NavLink></li>
 								<li><NavLink to="/kontakt">Kontakt</NavLink></li>
 							</ul>
 							<button className="hamburger hamburger--squeeze" id="ham-menu" type="button" aria-label="Menu" aria-controls="navigation">
@@ -96,14 +100,16 @@ class App extends Component {
 									<Route path="/wizja" render={()=><Wizja toggleAnimations={this.toggleAnimations}/>}/>
 									<Route path="/program" render={()=><Program toggleAnimations={this.toggleAnimations}/>}/>
 									<Route path="/o-mnie" render={()=><OMnie toggleAnimations={this.toggleAnimations}/>}/>
+									<Route path="/rekomendacje" render={()=><Rekomendacje toggleAnimations={this.toggleAnimations}/>}/>
+									<Route path="/porozmawiajmy" render={()=><Porozmawiajmy toggleAnimations={this.toggleAnimations}/>}/>
 									<Route path="/kontakt" render={()=><Kontakt toggleAnimations={this.toggleAnimations}/>}/>
 									<Route component={Error404} />
 								</Switch>
 							</article>
 							<aside>
-								<div className="fb-page main-widget" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+								<div className="fb-page main-widget" data-href="https://www.facebook.com/bjarzembinski" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 								<div className="fb-page small-widget" 
-									data-href="https://www.facebook.com/facebook"
+									data-href="https://www.facebook.com/bjarzembinski"
 									data-width="280" 
 									data-hide-cover="false"
 									data-show-facepile="false"></div>

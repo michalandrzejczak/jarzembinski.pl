@@ -1,17 +1,19 @@
 header {
-	height: 400px;
+	height: 500px;
 	width: 100%;
 	position: relative;
 	background-image: url("./assets/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 70% 0;
-	padding: 50px 0 0 0;
+	background-position: 27% 0;
 	transition: all 0.3s ease;
+	padding-top: 50px;
 }
 
 .title-container {
-	margin: 80px 10% 20px 20%;
+	float: right;
+	text-align: right;
+	margin: 110px 10% 20px;
 	transition: all 0.3s ease;
 }
 
@@ -33,14 +35,15 @@ nav {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	margin: 0 0;
-	padding: 0 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	transition: all 0.3s ease;
 
 	.navbar {
-		margin: 0 0 0 19%;
+		margin: 0;
 		padding: 0 0;
 		transition: all 0.3s ease;
 
@@ -112,7 +115,18 @@ nav li a[href="/"] {
 	transition: all 0.5s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+	nav {
+		.navbar {
+			li {
+				a {
+					padding: 20px 10px 16px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
 	nav {
 		display: flex;
 		justify-content: center;
@@ -172,7 +186,9 @@ nav li a[href="/"] {
 	}
 
 	.title-container {
-		margin: 50px 7% 20px 7%;
+		margin: 60px 10% 20px 10%;
+		float: none;
+		text-align: center;
 		transition: all 0.3s ease;
 	}
 
@@ -189,11 +205,7 @@ nav li a[href="/"] {
 
 
 // media queries
-@media screen and (max-width: 500px) {
-	.title-container {
-		text-align: center;
-		transition: all 0.3s ease;
-	}
+@media only screen and (max-width: 500px) {
 
 	h1.title {
 		font-size: 2em;
