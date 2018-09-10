@@ -4,8 +4,8 @@ class Error404 extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Error 404</h1>
-				<h2>Strony nie znaleziono</h2>
+				<h2>Error 404</h2>
+				<h3>Strony nie znaleziono</h3>
 			</div>
 		);
 	}

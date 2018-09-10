@@ -537,14 +537,16 @@ h1.title {
   font-size: 3em;
   color: #fff;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 h2.subtitle {
   font-weight: 300;
   font-size: 2em;
   color: #f4f4f4;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 nav {
   background-color: rgba(0, 0, 0, 0.5);
@@ -714,32 +716,37 @@ nav li a[href="/"] {
     font-size: 1.3em;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; } }
-#home-section .home-para-heading {
-  text-align: center;
-  line-height: 2em;
-  font-size: 1.5rem;
-  color: #0080c7;
-  max-width: 600px;
-  margin: 10px auto;
-  padding: 0 10px; }
-#home-section .home-para {
-  text-align: center;
-  line-height: 2em;
-  font-size: 1.2rem;
-  color: #2c2c2c;
-  max-width: 600px;
-  margin: 0px auto;
-  padding: 0 10px; }
-#home-section .home-special {
-  font-weight: 900; }
+#home-section .text-container {
+  padding: 50px 0; }
+  #home-section .text-container .home-para-heading {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.5rem;
+    color: #0080c7;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0 10px; }
+  #home-section .text-container .home-para {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.2rem;
+    color: #2c2c2c;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 0 10px; }
+  #home-section .text-container .home-special {
+    font-weight: 900; }
 
 @media only screen and (max-width: 768px) {
-  #home-section .home-para-heading {
+  #home-section .text-container .home-para-heading {
     line-height: 1.5em;
     font-size: 1.2rem; }
-  #home-section .home-para {
+  #home-section .text-container .home-para {
     line-height: 1.5em;
     font-size: 1rem; } }
+@media only screen and (max-width: 500px) {
+  #home-section .text-container {
+    padding: 20px 0; } }
 #wizja-section .text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,6 +882,37 @@ nav li a[href="/"] {
     margin: 25px 0;
     text-indent: 30px; }
 
+#rekomendacje-section .content-container {
+  padding: 10px 20px;
+  text-align: center; }
+  #rekomendacje-section .content-container .person-wrapper {
+    display: inline-block;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center; }
+    #rekomendacje-section .content-container .person-wrapper img {
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+    #rekomendacje-section .content-container .person-wrapper .person-name {
+      font-size: 1.25rem;
+      color: #0080c7;
+      margin: 10px;
+      text-align: center; }
+    #rekomendacje-section .content-container .person-wrapper .person-whois {
+      color: #868686;
+      font-size: 1.1rem;
+      font-weight: 100;
+      text-align: center; }
+    #rekomendacje-section .content-container .person-wrapper .description-wrapper {
+      text-align: justify;
+      text-indent: 30px;
+      font-size: 0.9rem;
+      line-height: 1.5em; }
+
+@media only screen and (max-width: 500px) {
+  #rekomendacje-section .content-container .person-wrapper img {
+    width: 150px; } }
 #porozmawiajmy-section iframe[title="porozmawiajmy-survey"] {
   width: 100%; }
 @media only screen and (max-width: 1250px) {

@@ -1,3 +1,51 @@
 #rekomendacje-section {
+	.content-container {
+		padding: 10px 20px;
+		text-align: center;
 
+		.person-wrapper {
+			display: inline-block;
+			max-width: 300px;
+			margin: 20px;
+			text-align: center;
+
+			img {
+				border-radius: 50%;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			}
+
+			.person-name {
+				font-size: 1.25rem;
+				color: $primarycolor;
+				margin: 10px;
+				text-align: center;
+			}
+
+			.person-whois {
+				color: #868686;
+				font-size: 1.1rem;
+				font-weight: 100;
+				text-align: center;
+			}
+
+			.description-wrapper {
+				text-align: justify;
+				text-indent: 30px;
+				font-size: 0.9rem;
+				line-height: 1.5em;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#rekomendacje-section {
+		.content-container {
+			.person-wrapper {
+				img {
+					width: 150px;
+				}
+			}
+		}
+	}
 }
