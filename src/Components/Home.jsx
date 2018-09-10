@@ -10,17 +10,17 @@ class Home extends Component {
 		return (
 			<div id="home-section">
 				<h2><span className="anim-fadein-heading">Strona główna</span></h2>
-				<div class="text-container">
-					<p class="home-para-heading">
+				<div className="text-container">
+					<p className="home-para-heading">
 						Witaj na mojej stronie
 					</p>
-					<p class="home-para">
-						Biorąc pod uwagę ile materiałów wyborczych przewija się w trakcie kampanii wyborczej <span class="home-special">jestem zaszczycony, że tutaj jesteś</span>.
+					<p className="home-para">
+						Biorąc pod uwagę ile materiałów wyborczych przewija się w trakcie kampanii wyborczej <span className="home-special">jestem zaszczycony, że tutaj jesteś</span>.
 					</p>
-					<p class="home-para">
+					<p className="home-para">
 						Zapraszam do poczytania o mnie i moich postulatach.
 					</p>
-					<p class="home-para">
+					<p className="home-para">
 						Zachęcam również do rozmów o Gdyni i jej dzielnicach.
 					</p>
 				</div>
