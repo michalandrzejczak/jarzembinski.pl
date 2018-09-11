@@ -10,7 +10,7 @@ class Kontakt extends Component {
 		return (
 			<div id="kontakt-section">
 				<h2><span className="anim-fadein-heading">Kontakt</span></h2>
-				<div className="method-wrapper">
+				<div className="method-wrapper anim-fadein-text">
 					<a href="mailto:bartlomiej@jarzembinski.pl">
 						<i className="fas fa-paper-plane"></i>
 						Wyślij mi e-mail<br/>
