@@ -52,6 +52,7 @@ class App extends Component {
 
 				triggerElement: this,
 				triggerHook: 0.9,
+				reverse: false
 
 			})
 			.setClassToggle(this, "animationToggle")
