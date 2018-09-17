@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // photos:
 import tp from "../assets/rekomendacje/tp.jpg"
 import pb from "../assets/rekomendacje/pb.jpg"
+import pg from "../assets/rekomendacje/pg.jpg"
 import zzt from "../assets/rekomendacje/zzt.jpg"
 
 class Rekomendacje extends Component {
@@ -25,6 +26,14 @@ class Rekomendacje extends Component {
 						</p>
 					</div>
 					<div className="person-wrapper">
+						<img src={pg} alt="Przemysław Grenda JPG" className="anim-fadein-scaleout"/>
+						<h4 className="person-name anim-fadein-scaleout">Przemysław Grenda</h4>
+						<span className="person-whois anim-fadein-text">radny dzielnicy Chylonia</span>
+						<p className="description-wrapper anim-fadein-text">
+							Chęć pracy na rzecz lokalnej społeczności to cecha, która w rodzinie Bartka jest głęboko zakorzeniona, doskonale wiedzą o tym mieszkańcy jego rodzimej dzielnicy Pustki Cisowskie-Demptowo, do której rozwoju od 4 latach przyczynia się w ramach działań Rady Dzielnicy. Jego hobbistyczne zacięcie związane z polityką i ekonomią sięgające lat szkolnych przerodziło się w studia w tym kierunku oraz ostatecznie w bardzo dobrze ugruntowaną wiedzę, która wraz z analitycznym i pełnym pomysłów umysłem przyczyni się – jestem pewien, do pracy w Radzie Miasta na najwyższym możliwym poziomie.
+						</p>
+					</div>
+					<div className="person-wrapper">
 						<img src={pb} alt="Paweł Borkowski JPG" className="anim-fadein-scaleout"/>
 						<h4 className="person-name anim-fadein-scaleout">Paweł Borkowski</h4>
 						<span className="person-whois anim-fadein-text">redaktor naczelny Jestem z Gdyni</span>
@@ -37,7 +46,7 @@ class Rekomendacje extends Component {
 						<h4 className="person-name anim-fadein-scaleout">Tomasz Prabucki</h4>
 						<span className="person-whois anim-fadein-text">przewodniczący Młodzieżowej Rady Miasta Gdyni III kadencji</span>
 						<p className="description-wrapper anim-fadein-text">
-							Bartka znam już od ponad 10 lat. Od kiedy pamiętam wspierał rówieśników potrzebujących pomocy i starał się działać dla dobra lokalnej społeczności. Robił to solidnie i z godnym podziwu zaangażowaniem. Mam nadzieję, że w Radzie Miasta Gdyni znajdą się osoby właśnie takie jak Bartek. Gdynia tego potrzebuje :).
+							Bartka znam już od ponad 10 lat. Od kiedy pamiętam wspierał osoby w swoim otoczeniu i starał się działać dla dobra lokalnej społeczności. Robił to solidnie i z godnym podziwu zaangażowaniem. Mam nadzieję, że w Radzie Miasta Gdyni znajdą się osoby właśnie takie jak Bartek. Gdynia tego potrzebuje :).
 						</p>
 					</div>
 				</div>
