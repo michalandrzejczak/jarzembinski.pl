@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 // photos:
+import ad from "../assets/rekomendacje/ad.jpg"
 import tp from "../assets/rekomendacje/tp.jpg"
 import pb from "../assets/rekomendacje/pb.jpg"
 import pg from "../assets/rekomendacje/pg.jpg"
@@ -23,6 +24,14 @@ class Rekomendacje extends Component {
 						<span className="person-whois anim-fadein-text">wiceprzewodniczący Rady Miasta Gdyni</span>
 						<p className="description-wrapper anim-fadein-text">
 							Bartek to uśmiechnięty, pogodny i zaangażowany młody człowiek, którego każdy chciałby mieć w swoim zespole. Żyje problemami swojej dzielnicy i skutecznie je rozwiązuje. Po 4 latach pracy dla swojej dzielnicy, jest gotów na więcej, a ja bardzo liczę, że dostanie taką możliwość. Znam od lat, obserwuję w działaniu, popieram, trzymam kciuki i zachęcam do głosowania na Bartka. Takich ludzi potrzebuję gdyńska rada miasta!
+						</p>
+					</div>
+					<div className="person-wrapper">
+						<img src={ad} alt="Artur Dziambor JPG" className="anim-fadein-scaleout"/>
+						<h4 className="person-name anim-fadein-scaleout">Artur Dziambor</h4>
+						<span className="person-whois anim-fadein-text">radny dzielnicy Cisowa</span>
+						<p className="description-wrapper anim-fadein-text">
+							Czasem spotyka się takich ludzi, z którymi wystarczy zamienić kilka zdań, aby dojść do wniosku, że chciałoby się z nimi współpracować. Bartka poznałem wiele lat temu, gdy był jeszcze bardzo młody, a już wyjątkowo aktywny. Od samego początku bardzo mu zależało aby wprowadzać wielkie pozytywne zmiany i aby być kreatorem otaczającej nas rzeczywistości. Jestem przekonany, że doświadczenie zdobyte przez lata pracy na rzecz jego dzielnicy, zostanie doskonale wykorzystane na rzecz wszystkich mieszkańców Gdyni. Przed Bartkiem kampania wyborcza. Koleżanek i kolegów przekonywać nie musiał, swojego kandydata mają od momentu gdy ogłosił start. Trzymam kciuki za to aby Gdynianie, którzy nie mieli okazji poznać Bartka osobiście, obdarzyli go podobnym zaufaniem.
 						</p>
 					</div>
 					<div className="person-wrapper">
