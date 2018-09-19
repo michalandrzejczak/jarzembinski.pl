@@ -15,7 +15,7 @@ class O_mnie extends Component {
 				<div className="text-container">
 					<img src={aboutme} alt="aboutme.jpg" className="anim-fadein-text"/>
 					<p className="anim-fadein-text">
-						Jestem młodym, ambitnym mieszkańcem Gdyni. Mieszkam na Pustkach Cisowskich praktycznie od zawsze. To moje miejsce na ziemi i chciałbym, by zmieniało się na lepsze zgodnie z oczekiwaniami mieszkańców. Potrafię o te zmiany walczyć i do nich przekonywać. Mimo młodego wieku, mam duże doświadczenie w pracy społecznej. Od dawna pomagałem osobom w moim otoczeniu. Byłem przewodniczącym samorządu szkolnego, przewodniczącym komisji w Młodzieżowej Radzie Miasta, a od 4 lat jestem radnym dzielnicy Pustki Cisowskie-Demptowo.
+						Jestem młodym, ambitnym mieszkańcem Gdyni. Mieszkam na Pustkach Cisowskich praktycznie od zawsze. To moje miejsce na ziemi i chciałbym, by zmieniało się na lepsze zgodnie z oczekiwaniami mieszkańców. Potrafię o te zmiany walczyć i do nich przekonywać. Mimo młodego wieku, mam duże doświadczenie w pracy społecznej. Od dawna pomagałem osobom w moim otoczeniu. Byłem przewodniczącym komisji w Młodzieżowej Radzie Miasta, przewodniczącym samorządu szkolnego, a od 4 lat jestem radnym dzielnicy Pustki Cisowskie-Demptowo.
 					</p>
 					<p className="anim-fadein-text">
 						Umiem dobrze organizować pracę swoją i zespołów, bez problemu radziłem sobie z łączeniem pracy zawodowej i studiów dziennych. Lubię podejmować nowe wyzwania i traktuję je poważnie.

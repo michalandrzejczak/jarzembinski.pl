@@ -21,10 +21,10 @@ class Wizja extends Component {
 						<strong>Moja Gdynia</strong> to miasto, które uczciwie przeprowadza konsultacje społeczne. Mieszkańcy powinni być pytani o zdanie w kwestiach wrażliwych i istotnych dla lokalnej społeczności.
 					</div>
 					<div className="para_align-left anim-slideleft">
-						<strong>Moja Gdynia</strong> korzysta z zaangażowania osób pracujących na jej rzecz, nie zważając na partyjne i inne nieistotne podziały. 
+						<strong>Moja Gdynia</strong> to miasto, które dba o wszystkie swoje dzielnice i swoją uwagę poświęca nie tylko projektom ogólnomiejskim, ale także służącym konkretnym dzielnicom.
 					</div>
 					<div className="para_align-right anim-slideright">
-						<strong>Moja Gdynia</strong> to miasto, które dba o wszystkie swoje dzielnice i swoją uwagę poświęca nie tylko projektom ogólnomiejskim, ale także służącym konkretnym dzielnicom.
+						<strong>Moja Gdynia</strong> korzysta z zaangażowania osób pracujących na jej rzecz, nie zważając na partyjne i inne nieistotne podziały.
 					</div>
 				</div>
 			</div>
