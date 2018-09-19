@@ -548,6 +548,14 @@ h2.subtitle {
   transition: all 0.3s ease;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
+h3.subtitle {
+  font-weight: 250;
+  font-size: 1.5em;
+  color: #e2f4ff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
 nav {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
