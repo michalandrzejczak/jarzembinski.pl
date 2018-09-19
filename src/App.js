@@ -74,7 +74,8 @@ class App extends Component {
 							<NavLink to="/">
 								<h1 className="title">Bartłomiej Jarzembiński</h1>
 							</NavLink>
-							<h2 className="subtitle">Kandydat na radnego</h2>
+							<h2 className="subtitle">Kandydat na radnego Gdyni</h2>
+							<h3 className="subtitle">KWW Wspólna Gdynia</h3>
 						</div>
 						<nav>
 							<ul className="navbar">
