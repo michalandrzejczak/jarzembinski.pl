@@ -21,7 +21,7 @@ h1.title {
 	font-size: 3em;
 	color: #fff;
 	transition: all 0.3s ease;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 h2.subtitle {
@@ -29,7 +29,7 @@ h2.subtitle {
 	font-size: 2em;
 	color: #f4f4f4;
 	transition: all 0.3s ease;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 h3.subtitle {
@@ -37,7 +37,7 @@ h3.subtitle {
 	font-size: 1.5em;
 	color: #e2f4ff;
 	transition: all 0.3s ease;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 nav {
@@ -125,7 +125,36 @@ nav li a[href="/"] {
 	transition: all 0.5s ease;
 }
 
+@media only screen and (max-width: 1250px) {
+	header {
+		background-position: 40% 0;
+	}
+	.title-container {
+		margin: 110px 5% 0;
+	}
+}
+@media only screen and (max-width: 1050px) {
+	h1.title {
+		font-size: 2.5em;
+	}
+	h2.subtitle {
+		font-size: 1.7em;
+	}
+	h3.subtitle {
+		font-size: 1.3em;
+	}
+	h1.title, h2.subtitle, h3.subtitle {
+		margin: 20px 0;
+	}
+}
+
 @media only screen and (max-width: 900px) {
+	.title-container {
+		position: absolute;
+		right: 0;
+		bottom: 70px;
+		margin: 0 30px;
+	}
 	nav {
 		.navbar {
 			li {
@@ -192,30 +221,17 @@ nav li a[href="/"] {
 
 	header {
 		transition: all 0.3s ease;
+		background-position: -220px 0;
 		height: 250px;
 	}
 
 	.title-container {
-		margin: 60px 10% 20px 10%;
-		float: none;
-		text-align: center;
+		position: absolute;
+		right: 5px;
+		bottom: 0;
+		margin: 0 20px;
 		transition: all 0.3s ease;
 	}
-
-	h1.title {
-		font-size: 2.5em;
-		transition: all 0.3s ease;
-	}
-
-	h2.subtitle {
-		font-size: 1.7em;
-		transition: all 0.3s ease;
-	}
-}
-
-
-// media queries
-@media only screen and (max-width: 500px) {
 
 	h1.title {
 		font-size: 2em;
@@ -223,7 +239,53 @@ nav li a[href="/"] {
 	}
 
 	h2.subtitle {
-		font-size: 1.3em;
+		font-size: 1.5em;
 		transition: all 0.3s ease;
 	}
+
+	h2.subtitle {
+		font-size: 1.1em;
+		transition: all 0.3s ease;
+	}
+}
+
+
+// media queries
+@media only screen and (max-width: 500px) {
+	
+	header {
+		background-position: 27% 0;
+	}
+	
+	.title-container {
+		position: absolute;
+		bottom: 0;
+		left:0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	h1.title, h2.subtitle, h3.subtitle {
+		margin: 10px 0;
+	}
+	
+	h1.title {
+		font-size: 1.6em;
+		transition: all 0.3s ease; 
+	}
+	
+	h2.subtitle {
+		font-size: 1.3em;
+		font-weight: 500;
+		text-shadow: 0 0 5px #000;
+		transition: all 0.3s ease;
+	} 
+	
+	h3.subtitle {
+		font-size: 1em;
+		font-weight: 300;
+		text-shadow: 0 0 5px #000;
+		transition: all 0.3s ease;
+	} 
 }
