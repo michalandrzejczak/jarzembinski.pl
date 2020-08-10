@@ -1,0 +1,55 @@
+#home-section {
+
+	.text-container {
+		padding: 50px 0;
+
+		.home-para-heading {
+			text-align: center;
+			line-height: 2em;
+			font-size: 1.5rem;
+			color: $primarycolor;
+			max-width: 600px;
+			margin: 10px auto;
+			padding: 0 10px;
+		}
+
+		.home-para {
+			text-align: center;
+			line-height: 2em;
+			font-size: 1.2rem;
+			color: #2c2c2c;
+			max-width: 600px;
+			margin: 0px auto;
+			padding: 0 10px;
+		}
+
+		.home-special {
+			font-weight: 900;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	#home-section {
+		.text-container {
+			.home-para-heading {
+				line-height: 1.5em;
+				font-size: 1.2rem;
+			}
+
+			.home-para {
+				line-height: 1.5em;
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#home-section {
+		.text-container {
+			padding: 20px 0;
+		}
+	}
+}

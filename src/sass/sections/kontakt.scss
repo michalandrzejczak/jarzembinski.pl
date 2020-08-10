@@ -1,0 +1,78 @@
+#kontakt-section {
+	text-align: center;
+	color: #6f6f6f;
+
+	h2 {
+		text-align: right;
+	}
+
+	.method-wrapper {
+		margin: 50px;
+		color: $primarycolor;
+		font-size: 30px;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			transition: all 0.3s ease;
+
+			&:hover {
+				color: #075986;
+				text-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+				transition: all 0.3s ease;
+
+				.fa-paper-plane {
+					transform: rotate(20deg);
+					color: #075986;
+					transition: all 0.3s ease;
+				}
+				
+				.e-mail {
+					color: #626262;
+					transition: all 0.3s ease;
+				}
+			}
+
+			.fa-paper-plane {
+				font-size: 75px;
+				color: $primarycolor;
+				margin: 0 20px;
+				transition: all 0.3s ease;
+			}
+		}
+		.e-mail {
+			color: #a5a5a5;
+			font-size: 0.6em;
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#kontakt-section {
+		.method-wrapper {
+			font-size: 24px;
+
+			a {
+				.fa-paper-plane {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	#kontakt-section {
+		.method-wrapper {
+			font-size: 20px;
+
+			a {
+				.fa-paper-plane {
+					font-size: 36px;
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+}
