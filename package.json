@@ -2,7 +2,7 @@
   "name": "jar_spa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michalandrzejczak.github.io",
+  "homepage": "https://michalandrzejczak.github.io/jarzembinski.pl",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "gsap": "^2.0.2",
