@@ -5,7 +5,7 @@
   "homepage": "https://michalandrzejczak.github.io/jarzembinski.pl",
   "dependencies": {
     "gh-pages": "^1.2.0",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "gulp-babel": "^7.0.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
